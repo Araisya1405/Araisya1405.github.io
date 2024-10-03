@@ -1,0 +1,445 @@
+/* membuat variabel untuk mempersingkat  */
+:root {
+--pink: #f14e95; 
+--bg: #0a0a0a;
+--shadow: 0 2px 2px rgb(0 0 0/0.5);
+}
+
+
+/* mengatur font body HTML */
+body{
+font-size: 1.2rem;
+font-family: "Work Sans", sans-serif;
+min-height: 100px;
+}
+
+
+/* background ke posisi sebelum class hero anuk wkwkwk*/
+.hero::before{
+content:"";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url(img/kota1.jpg);
+background-size: cover;
+backgroud-position: center;
+z-index: -1;
+}
+
+            /* class hero */
+
+.hero{
+position: relative;
+min-height: 100vh;
+}
+
+.hero h1, .hero h4, .hero p{
+text-shadow: var(--shadow);
+}
+
+.hero h1{
+font-family: "sacramento",cursive;
+font-size: 6rem;
+}
+
+.hero h4{
+font-size: 1.6rem;
+}
+
+.hero p{
+font-size: 1.4rem;
+}
+
+/* warna link */
+.hero a{
+color: var(--pink);
+background-color: white;
+box-shadow: var(--shadow);
+}
+
+/* merubah warna saat link d clik */
+.hero a:hover{
+background-color: var(--pink);
+color: white;
+}
+
+/* memberi bg navbar utk membuat blur */
+.navbar2{
+background-color: rgba(255,255,255,0.3) !important;
+backdrop-filter: blur(4px);
+}
+.navbar2 .offcanvas{
+height: 100vh;
+width:  50%;
+}
+
+
+
+/* memper cantik navbar brand dan offcanvas title*/
+.navbar2 .navbar-brand,
+.navbar2 .offcanvas-title{
+font-family: "sacramento", cursive;
+font-size: 3rem;
+font-weight: bold;
+}
+
+/* navbar link */
+.navbar2 .navbar-link{
+text-transform: uppercase;
+text-align: center;
+}
+
+              /* mengatur posisi bg home */
+
+.home{
+background-image: url(img/bg.jpg);
+background-size: cover;
+min-height: 100vh;
+margin-top: -6rem;
+padding-top: 15rem;
+padding-bottom: 5rem;
+}
+
+.home h2,  
+.info h2, 
+.story h2, 
+.gallery h2,
+.rsvp h2,
+.gifts h2{
+color: var(--pink);
+font-family: sacramento;
+font-size: 5rem;
+font-weight: bolt;
+}
+
+.home h3{
+color: #444;
+font-size: 1.5rem;
+margin-bottom: 1rem;
+  font-weight:  400;
+}
+
+.home p{
+color: #555;
+font-size: 1.1rem;
+}
+
+.home .couple{
+margin-top: 100px;
+}
+
+.home .couple h3{
+font-family: "sacramento";
+color: var(--pink);
+font-size: 2.5rem;
+}
+
+.home .couple img{
+width: 100%;
+}
+ /* icons */
+.home .hati{
+width: 33px;
+height: 30px;
+background-color: white;
+display: flex;
+border-radius: 50%;
+box-shadow: 0 0 5px rgba(0,0,0,0.5);
+position: absolute;
+left: 50%;
+transform: translateX(-50%) translateY(65px);
+}
+
+.home .hati i{
+color: var(--pink);
+margin: auto;
+}
+
+              /*class Info*/
+
+.info{
+background-color: var(--bg);
+color: white;
+padding-top: 10rem;
+padding-bottom: 10rem;
+}
+
+.info .alamat{
+font-size: 1.2rem;
+}
+
+.info .deskripsi,
+.info .acara
+{
+font-size: 1rem;
+font-weight: 300;
+}
+
+.info .card{
+background-color: rgba(255,255,255,0.2)!important; 
+color: white !important;
+border: 1px solid #999;
+}
+
+.info .card-header{
+border-bottom: 1px solid #999;
+text-transform: uppercase;
+latter-spacing: 0.1rem;
+}
+
+.info .card-boddy{
+font-size: 1rem;
+}
+
+.info .card-footer{
+border-top: 1px solid #999;
+font-size: 0.9rem;
+font-weight: 300;
+}
+
+                  /* class story*/
+
+.story,
+.gallery,
+.rsvp,
+.gifts{
+  padding-top: 10rem;
+  padding-bottom:  8rem;
+}
+
+.story span,
+.gallery span,
+.gifts span{
+  text-transform: uppercase;
+  color: #666;
+  font-size:  0.9rem;
+  letter-spacing:  1px;
+  display:  block;
+  margin-bottom:  1rem;
+}
+
+.story p,
+.gallery p,
+.rsvp p,
+.gifts p{
+  font-size: 1rem;
+  font-weight:  300;
+}
+
+/*story galeri dan kisah perjalanan*/
+.timeline{
+  list-style:  none;
+  padding:  1.4rem 0;
+  margin-top:  1rem;
+  position:  relative;
+}
+
+/*garis*/
+.timeline::before{
+  content: "";
+  top:  0;
+  bottom:  0;
+  position:  absolute;
+  width:  1px;
+  background-color: #ccc;
+  left:  50%;
+}
+
+.timeline li{
+  margin-bottom:  1.5rem;
+  position:  relative;
+}
+
+.timeline li::before,
+.timeline li::after{
+  content: "";
+  display:  table;
+}
+
+.timeline li::after{
+  clear: both;
+}
+
+.timeline .timeline-image{
+  width:  160px;
+  height:  160px;
+  background-color:  #ccc;
+  position:  absolute;
+  left: 50%;
+  border-radius:  50%;
+  transform:  translateX(-50%);
+  background-size:  cover;
+  background-repeat:  no-repeat;
+}
+
+.timeline li .timeline-panel{
+  width: 40%;
+  float:  left;
+  border:  1px solid #ccc;
+  padding:  2rem;
+  position:  relative;
+  border-radius:  5px;
+}
+
+.timeline li.kanan .timeline-panel{
+  float:  right;
+}
+
+                                      /*CLASS GALLERRY*/
+
+.gallery{
+  background-color:  #f5f5f5;
+}
+
+                                         /*CLASS RSVP*/
+
+.rsvp{
+  background-color:  var(--bg); }
+.rsvp h2{
+  font-size:  4.5rem; }
+.rsvp p{
+  color: white; }  
+.rsvp form label{
+  color: white; }
+.rsvp button{
+  background-color:  var(--pink);
+  color: white;
+ border:  1px solid var(--pink); }
+.rsvp button:hover{
+  background-color: aqua;
+  color: var(--pink);
+  border: 1px solid aqua;
+}
+
+                 /*COPY RIGHT*/
+
+footer{
+  padding: 3rem;
+  background-color: var(--pink);
+  color: white;}
+footer a{
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;}
+footer a:hover{
+  color: aqua;}
+footer li{
+  list-style: none;
+  display: inline;
+ margin: 0.5rem;}
+
+                        /*AUDIO*/
+
+.audio-icon-wrapper{
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: muter 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+       /*aksi icon muter*/
+@keyframes muter{
+  from{
+    transform:  rotate(0);}
+  to{
+    transform: rotate(360deg);}
+}
+
+
+
+
+/* media Query */
+
+/* extra besar*/
+@media(max-width: 1200px){
+  /*icons*/
+  .home .hati{
+  transform: translateX(50%) translateY(45px);}
+}
+
+
+/* laptop */
+@media(max-width: 992px){
+html{
+font-size: 75%; }
+                          /*waktu*/
+.simply-countdown> .simply-section{
+padding: 60px;}
+                             /*icons*/
+.home .hati{
+transform: translateX(-50%) translateY(35px);}
+                                /*story*/
+  .timeline::before{
+  left:60px;}
+  
+.timeline li .timeline-image{
+  left: 15px;
+  margin-left:  45px;
+  top: 16px;}
+  
+.timeline li .timeline-panel{
+  width: calc((75%-200px));
+float:  right;}  
+}
+
+
+/* tablet */
+@media(max-width: 768px){
+html{
+font-size: 65%;}
+                          /*js waktu*/
+.simply-countdown> .simply-section{
+padding: 60px;
+margin: 5px;}
+                               /*icons*/
+.home .hati{
+transform: translateX(-50%) translateY(15px);}
+                               /*story*/  
+.timeline li .timeline-image{
+  width: 140px;
+  height:  140px;}  
+}
+
+
+/* hand phone */
+@media(max-width: 576px){
+html{
+font-size: 55%;}
+                               /*waktu*/
+.simply-countdown> .simply-section{
+padding: 35px;
+margin: 3px; }
+                               /*navbar*/
+.navbar2 .nav-link{
+text-align: center;
+font-size: 2rem;}
+                               /*icons*/
+  .home .hati{
+display: none;}
+                        /*story*/
+.timeline li .timeline-image{
+  width:  90px;
+  height: 90px;}
+  
+.timeline li .timeline-panel{
+  width:  60%;
+transform: translateX(-20px);}
+}
+
+
+
+
