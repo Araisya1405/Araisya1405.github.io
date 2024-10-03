@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Araisya Wedding</title>
+
+<!--memanggil CSS dari bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<!--memanggil font dr google font-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+<!--mengambil download.n CSS dari github https://vincentloy.github.io/simplyCountdown.js/-->
+<link rel="stylesheet" href="waktu/simplyCountdown.theme.default.css"/>
+<script src="waktu/simplyCountdown.min.js"></script>
+
+<!-- memanggil icon bootstrap-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!--memanggil file CSS-->
+   <link rel="stylesheet" href="style.css"> 
+  </head>
+
+  <body>
+                    <!--HERO-->
+<!--elmen HTML-->
+<section id="hero"class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white ">
+  <main>
+   <h4>kepada Bapak/Ibu/Saudara/i, <span></span></h4>
+   <h1>Adam & Hawa </h1>
+   <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+  <div class="simply-countdown"> </div>
+<!--link tombol-->
+<a href="#home" class="btn btn-lg mt-5" onclick="scrollAktif()">Lihat Undangan</a>
+  </main>
+ </section>
+
+<!--navbar offcanvas bootstrap-->
+<nav class="navbar navbar-expand-sm bg-transparent sticky-top navbar2">
+  <div class="container">
+<!--brand navbar-->
+    <a class="navbar-brand" href="#">©Araisya</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"  aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span></button>
+  <div class="offcanvas offcanvas-start" 
+       tabindex="-1" id="offcanvasNavbar" 
+       aria-labelledby="offcanvasNavbarLabel">
+  <div class="offcanvas-header">
+  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Adam</h5>
+   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+
+      <div class="offcanvas-body">
+<!-- navbar nav -->
+<div class="navbar-nav ms-auto">
+ <a class="nav-link" href="#home">Home</a>
+ <a class="nav-link" href="#info">Info</a>
+ <a class="nav-link" href="#story">Story</a>
+ <a class="nav-link" href="#gallery">Gallery</a>
+ <a class="nav-link" href="#rsvp">RSVP</a>
+ <a class="nav-link" href="#gifts">Gifts</a></div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+                           <!--HOME-->
+
+<!--isi navbar nav Home-->
+<section id="home" class="home">
+<div class= "container">
+
+         <!--1.kolom kata undangan-->
+ <div class="row justify-content-center">
+  <div class="col-md-8 col-10 text-center">
+   <h2>Acara Pernikahan</h2>
+     <p class="acara">Dengan memohon rahmat dan ridho Allah SWT, kami mengharapkan kehadiran serta doa restu  Bapak/Ibu/Saudara (i) pada acara Resepsi kami. 
+       <h3>Yang insya Allah akan 
+Diselenggarakan : <br>Rabu, 1 Januari 2025 Di Pemalang, Jawa Tengah.</h3>
+   <p>Oleh karena itu, dengan segala hormat, Mengundang Bapak/Ibu, 
+      Saudara/i, Untuk hadir pada acara pernikahan kami.</p>
+  </div>
+ </div>
+
+            <!--2.kolom couple-->
+
+  <!--COUPLE membagi 2 baris(1/2) dalam 1 lembar-->
+  <!--PERINGATAN!!! 1 lembar berisi 12 kolom-->
+ <div class="row couple">
+          <!-- #colom foto dan teks ADAM-->
+  <div class="col-sm-6"><!--1/2lembar-->
+   <div class="row">
+    <div class="col-8 text-end"><!--1/4 lembar-->
+    <h3>Adam</h3>
+    <p>Maha Suci Allah SWT yang telah menciptakan makhluk-nya berpasang-pasangan Ya Allah,  perkenankan Saya,</p>
+    <p>putra bpk. Marjan<br>dan<br>ibu Kongguan</p>
+    </div>
+    <div class="col-4"><!--1/4 lembar -->
+    <img src="img/adm.jpg" alt="adam"
+        class="img-resposive rounded-circle">
+    </div>
+  </div>
+ </div>
+
+  <!--icons-->
+<span class="hati"> <i class="bi bi-heart-fill"></i> </span>
+
+         <!-- #colom foto dan teks HAWA-->
+ <div class="col-sm-6"><!--1/2lembar-->
+  <div class="row">
+   <div class="col-4"><!--1/4 lembar -->
+    <img src="img/hw.jpg" alt="hawa"
+        class="img-responsive rounded-circle">
+   </div>
+   <div class="col-8"><!--1/4 lembar-->
+    <h3>Hawa</h3>
+    <p>Maha Suci Allah SWT yang telah menciptakan makhluk-nya berpasang-pasangan Ya Allah,  perkenankan Saya, </p>
+    <p>putri bpk. Marjan<br>dan<br>ibu Kongguan</p>
+   </div>
+  </div>  
+ </div>
+    <!--end couple-->
+ </div>
+</div>
+</section>
+
+
+                           <!--INFO-->
+
+<section id="info" class="info"> 
+<div class="container">
+                        <!--1.deskripsi-->
+ <div class="row justify-content-center">
+  <div class="col-md-8 col-10 text-center">
+   <h2>Informasi Acara</h2>
+   <p class="alamat">Alamat:gedung Jeongdong Observatory<br> 
+      Jl.15 Deoksugung, Jung District, Seoul</p>
+    
+   <!--peta mini buka map chrom bagikan dan sematkn peta di sebelang link-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.6045110403816!2d126.9754066!3d37.5643806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca380afc8d347%3A0x11d0e0972699820b!2sJeongdong%20Observatory!5e0!3m2!1sid!2sid!4v1727257207769!5m2!1sid!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> 
+    </iframe>
+    
+   <a href="https://maps.app.goo.gl/UdK7SSzzXGJ7mLod9"
+      target="_blank" class="btn btn-light btn-sm my-4">
+      Klik untuk membuka peta</a>
+   <p class="deskripsi">Diharapkan untuk tidak salah tempat
+      tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda 
+      sedang dilangsungkan pernikahan, boleh jadi Anda salah 
+      tempat, atau salah jadwal.</p>
+  </div>
+ </div>
+                      <!--2.akad detail card 1-->
+ <div class="row justify-content-center mt-4">
+  <div class="col-md-5 col-10">
+   <div class="card text-center text-bg-light mb-5">
+    <div class="card-header">Akad Nikah</div>
+    <div class="card-body">
+                     <!--colom body waktu-->
+     <div class="row justify-content-center">
+      <div class="col-md-6"> 
+       <i class="bi bi-clock d-block"></i>
+       <span>08.00 - 10.00</span>
+      </div>
+                     <!--colom body tanggal-->
+      <div class="col-md-6"> 
+       <i class="bi bi-calendar3 d-block"></i>
+       <span>Rabu, 1 januari 2025</span>
+      </div>
+     </div>
+    </div>
+                     <!--foter-->
+    <div class="card-footer"> saat acara akad diharapkan untuk
+      kondusif menjaga ketenangan dan 
+      kekhusyuan seluruh prosesi.</div>
+   </div>
+  </div>
+                     <!-- resepsi card 2-->
+  <div class="col-md-5 col-10">
+   <div class="card text-center text-bg-light">
+    <div class="card-header">Resepsi</div>
+    <div class="card-body">
+                     <!--colom body1-->
+     <div class="row justify-content-center">
+      <div class="col-md-6"> 
+       <i class="bi bi-clock d-block"></i>
+       <span>11.00 - selesai</span>
+      </div>
+                     <!--colom body2-->
+      <div class="col-md-6"> 
+       <i class="bi bi-calendar3 d-block"></i>
+       <span>Rabu, 1 januari 2025</span>
+      </div>
+     </div>
+    </div>
+    <div class="card-footer"> saat acara akad diharapkan untuk
+      kondusif menjaga ketenangan dan 
+      kekhusyuan seluruh prosesi.</div>
+   </div>
+  </div>
+ </div>
+
+</div>
+</section>
+    
+                             <!-- STORY-->
+    
+<section id="story" class="story">
+    <div class="container">
+                               <!--colom1-->
+      <div class="row justify-content-center">
+        <div class="col-md-8  text-center">
+          <span>Bagaimana Cinta Kami Bersemi</span>
+          <h2>Cerita Kami</h2>
+          <p>undang undang dasar 1945, pembukaan bahwa sesungguhnya kemerdekaan itu hak segala bangsa dan oleh sebab itu penjajahan harus di hapuskan</p>          
+        </div>
+      </div>
+                                 <!--colom2-->
+      <div class="row justify-content-center">
+        <div class="col">          
+           <ul class="timeline">
+            <li>                             <!--cerita 1-->
+              <div class="timeline-image" style="background-image: url(img/bertemu.png);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                 <h3>Pertama Bertemu</h3>
+                 <span>5 april 2018</span>
+                </div>
+                <div class="timeline-boddy">
+                  <p>undang undang dasar 1945, pembukaan bahwa sesungguhnya kemerdekaan itu hak segala bangsa dan oleh sebab itu penjajahan harus di hapuskan.</p>
+                </div>
+              </div>
+            </li>  
+                                       <!--cerita 2-->
+            <li class="kanan">
+             <div class="timeline-image" style="background-image: url(img/pcr.jpeg);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                 <h3>Berpacaran</h3>
+                 <span>11 april 2018</span>
+                </div>
+                <div class="timeline-boddy">
+                  <p>undang undang dasar 1945, pembukaan bahwa sesungguhnya kemerdekaan itu hak segala bangsa dan oleh sebab itu penjajahan harus di hapuskan.</p>
+                </div>
+              </div>
+            </li>
+                                         <!--cerita 3-->
+             <li>
+             <div class="timeline-image" style="background-image: url(img/bertemu.png);"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                 <h3>Bertunangan</h3>
+                 <span>24 april 2019</span>
+                </div>
+                <div class="timeline-boddy">
+                  <p>undang undang dasar 1945, pembukaan bahwa sesungguhnya kemerdekaan itu hak segala bangsa dan oleh sebab itu penjajahan harus di hapuskan.</p>
+                </div>
+              </div>
+            </li>                         
+          </ul>          
+        </div>
+      </div><!--end row-->
+      
+    </div>   
+</section>
+  
+                                <!--GALLERY-->
+  
+  <section id="gallery" class="gallery">
+    <div class="container">
+     <div class="row justify-content-center">
+        <div class="col-md-8  text-center">
+          <span>Memori Kisah Kami</span>
+          <h2>Galeri Foto</h2>
+          <p>undang undang dasar 1945, pembukaan bahwa sesungguhnya kemerdekaan itu hak segala bangsa dan oleh sebab itu penjajahan harus di hapuskan</p>          
+        </div>
+      </div>
+                                           <!--gmbr 1-->
+      <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-3 row-cols-1 justify-content-center">
+        <div class="col mt-3">
+          <a href="img/gallery/adm1.jpeg" data-toggle="lightbox" data-gallery="mygallery" data-caption="Lee">
+            <img src="img/gallery/thumbnail/adm.jpg" alt="Lee" class="image-fluid w-100 rounded">
+          </a>
+        </div>
+                                 <!--gmbr 2-->
+        <div class="col mt-3">
+          <a href="https://picsum.photos/id/13/1200/768" data-toggle="lightbox"  data-gallery="mygallery" data-caption="2" >
+            <img src="https://picsum.photos/id/13/400/400" alt="2" class="image-fluid w-100 rounded">
+          </a>
+        </div>
+                               <!--gmbr 3-->
+        <div class="col mt-3">
+          <a href="https://picsum.photos/id/29/1200/768" data-toggle="lightbox"  data-gallery="mygallery" data-caption="3">
+            <img src="https://picsum.photos/id/29/400/400" alt="3" class="image-fluid w-100 rounded">
+          </a>
+        </div>
+                               <!--gmbr 4-->
+        <div class="col mt-3">
+          <a href="https://picsum.photos/id/70/1200/768" data-toggle="lightbox" data-gallery="mygallery" data-caption="4">
+            <img src="https://picsum.photos/id/70/400/400" alt="4" class="image-fluid w-100 rounded">
+          </a>
+       </div>
+                                   <!--gmbr 5-->
+        <div class="col mt-3">
+          <a href="https://picsum.photos/id/84/1200/768"data-toggle="lightbox"  data-gallery="mygallery" data-caption="5"> 
+            <img src="https://picsum.photos/id/84/400/400" alt="5" class="image-fluid w-100 rounded">
+          </a>
+        </div>
+                                 <!--gmbr 6-->
+        <div class="col mt-3">
+          <a href="https://picsum.photos/id/249/1200/768" data-toggle="lightbox"  data-gallery="mygallery" data-caption="6">
+            <img src="https://picsum.photos/id/249/400/400" alt="6" class="image-fluid w-100 rounded">
+          </a>
+        </div>
+      </div>      
+    </div>
+  </section>  
+  
+                                                      <!--RSVP-->
+  
+  <section id="rsvp" class="rsvp">
+    <div class="container">
+ 
+     <div class="row justify-content-center">
+        <div class="col-md-8  text-center">
+          <h2>Konfirmasi Kehadiran</h2>
+          <p>isi form dibawah ini untuk melakukan konfirmasi kehadiran.</p>          
+        </div>
+      </div>
+           <!--form nama-->
+      <form class="row row-cols-sm-auto g-3 
+        align-items-center justify-content-center" method="POST" 
+  action="https://script.google.com/macros/s/AKfycbzAq-g1s-KlKaGNDdwqIv0_owoeJcBaY4Wmj73MfvH127Jm_Kw6Ri5M7CE1YBNaEUutdA/exec"  id="my-form">
+        <div class="col-12">
+         <div class="mb-3">
+           <label for="nama" class="form-label">Nama</label>
+           <input type="text" class="form-control" name="nama" id="nama">
+         </div>
+        </div>
+              <!--form  jumlah-->
+        <div class="col-12">
+         <div class="mb-3">
+           <label for="jumlah" class="form-label">Kehadiran</label>
+           <input type="number" class="form-control" name="jumlah" id="jumlah" min="1" max="5" length="1" value="1">
+         </div>
+        </div>
+                  <!--form status-->
+        <div class="col-12">
+         <div class="mb-3">
+           <label for="status" class="form-label">Konfirmasi</label>
+           <select type="text" class="form-select" name="status" id="status">
+             <option selected>Pilih Salah Satu</option>
+             <option value="tidak hadir">Tidak Hadir</option>
+             <option value="hadir">Hadir</option>
+           </select>
+         </div>
+        </div>
+        
+        <div class="col-12" style="margin-top:35px;">
+          <button class="btn btn-primary">Kirim</button>
+        </div>
+      </form>
+                  <!--DISKUSI--> 
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+          <div id="disqus_thread"></div>
+<script>
+    /**
+    *  (Disarankan) Edit RECOMMENDED CONFIGURATION VARIABLES bagian tersebut menggunakan nilai dinamis CMS atau platform Anda.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://araisya-wedding.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+      </div>
+      
+    </div>
+  </section>  
+  
+  
+                                      <!--GIFT-->
+  
+  <section id="gifts" class="gifts">
+   <div class="container">      
+     <div class="row justify-content-center">
+        <div class="col-md-8  text-center">
+          <span>Ungkapan Tanda Kasih</span>
+          <h2>Konfirmasi Kehadiran</h2>
+          <p>Kami ucapkam Terima Kasih sebesar-besarnya 
+            pada bapak/ibu/saudara(i).</p>          
+        </div>
+      </div>
+     
+     <div class="row justify-content-center text-center">
+       <div class="col-md-6">
+        <ul class="list-group">
+         <li class="list-group-item">
+           <div class="fw-bold">DANA</div>123456789 - ADAM</li>
+         <li class="list-group-item">
+           <div class="fw-bold">BRI</div>123456789 - ADAM</li>
+         <li class="list-group-item">
+          <div class="fw-bold">SAWER</div> 
+           <img src="img/sawer.jpg" alt="saweria QR" class="img-thumbnail" width="150"> </li>
+        </ul>
+       </div>
+     </div>    
+    </div>
+  </section>
+  
+                                <!--FOOTER-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <small class="block">©2024 Araisya Wedding. 
+            All Rights Reserved.</small>
+          <small class="block">Design by 
+            <a href="https://www.instagram.com/arpin814">@Araisya</a></small>
+          
+                <!-- ganti href (#) dan (isi) sesuai alamat tautan medsos-->
+          <ul class="mt-3">
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+          </ul> 
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+                                <!--AUDIO-->
+  
+  <div id="auto-container">
+    <audio id="musik" autoplay loop> 
+     <source src="audio/musik.mp3" type="audio/mp3">
+    </audio>
+    <div class="audio-icon-wrapper" style="display: none;">
+      <i class="bi bi-disc"></i>
+    </div>
+  </div> 
+  
+  
+<!--memanggil java script dr bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- lightbox bootstrap 5-->
+<script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+  
+<!--memanggil download.n script dr github simplycountdown-->
+<script>
+simplyCountdown(".simply-countdown",{
+ year: 2025, // required
+ month: 1, // required
+ day: 1, // required
+ hours: 0, // Default is 0 [0-23] integer
+ minutes: 0, // Default is 0 [0-59] integer
+ seconds: 0, // Default is 0 [0-59] integer
+ words: { //words displayed into the countdown
+
+   days: { singular: 'hari', plural: 'hari' },
+   hours: { singular: 'jam', plural: 'jam' },
+   minutes: { singular: 'menit', plural: 'menit' },
+   seconds: { singular: 'detik', plural: 'detik' }
+        },           
+});
+</script>
+  
+                          <!--aksi form buka undangan dan audio-->
+<script>
+  //variabel  rootCss adl dukumen  queryseletor  dr style/CSS root
+  //variabel iconaudio adl dokumen queryselektor class audio-icon-wrapper
+  //variable musil adl dokumen queryselektor id musik
+  //var (let) apakah berjalan ? (false)tidak
+  //fungsi nonaktif  mempunyai aksi scrolT dan scrollL
+  //scrolT adl  layar harizontal tetap atau  dokumen dr elmen hnya scrolatas
+  //scrolL adl layar verikal tetap atau dokumen dr elmen hanyascrolkiri
+  //saat layar memaksa scrol bawah  lakukan fungsi berikut
+  //tetapkan layar untuk scroll  keatas dan kiri
+  //root  dokumen html  dan css kembali loncat halaman asal auto
+  
+  //AKTIF ! saat layar sudah scrolaktif  lakukan fungsi berikut
+  //root dokumen html dan css membuka halaman dengan lembut
+  //dan jalankan audio/musik
+  
+  //icon audio  saat iconaudio on lakukan fungsi berikut
+  //berjalan atau sebaliknya berjalan
+  //jika berjalan musik di pause
+ //maka hapus icon disc dan gunakan icon pause
+  //jika tidak..! musik play
+  //maka gunakan icon dics dan happus icon pause
+  const rootDocument = document.querySelector(":root");
+  const iconAudio = document.querySelector(".audio-icon-wrapper");
+  const iconPlay = document.querySelector(".audio-icon-wrapper i");
+  const musik = document.querySelector("#musik");
+  let berjalan = false;
+  
+  function  scrollNonaktif() {
+   scrollT= window.pageYOffset || document . documentElement . scrollTop;
+    scrollL = window.pageXOffset || document . documentElement . scrollLeft;
+    
+    window.onscroll = function (){
+      window.scrollTo(scrollT, scrollL); }    
+    
+    rootDocument.style.scrollBihavior = "auto";
+  }
+            //aktif    
+  function scrollAktif(){
+    window.onscroll = function(){}
+    rootDocument.style.scrollBihavior = "smooth";
+//    localStorage.setItem("opened" , "true");   //apa sudah d buka sebelum.y 
+    
+    playAudio();
+  }
+  
+ function playAudio(){
+   musik.volume = 0.3;
+   musik.play();
+   iconAudio.style.display = "flex";
+   berjalan = true;
+ }     
+            //icon audio
+  iconAudio.onclick = function(){
+   berjalan = !berjalan
+    if(berjalan){
+      musik.pause();
+      iconPlay.classList.remove("bi-disc");
+      iconPlay.classList.add("bi-pause-circle");
+    }
+    else{
+      musik.play(); 
+      iconPlay.classList.add("bi-disc");
+      iconPlay.classList.remove("bi-pause-circle");
+    }
+  }
+  
+//  if(!localStorage.getItem("opened") ){  
+//  scrollNonaktif();
+//  }
+  scrollNonaktif();
+
+  </script>
+  
+  
+                        <!--SUKSES ALERT-->
+  <script>
+  
+    window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Konfirmasi Kehadiran Berhasil terkirim!");
+    })
+  });
+});
+
+  </script>
+  </body>
+</html>
+
+
+
+
+
+
